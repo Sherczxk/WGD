@@ -1,0 +1,39 @@
+dataset_name: chameleon
+missing_type: whole
+model: mlp
+filling_method: wgd
+layer_L: 2
+h_hop: 2
+n_component: 64
+bary_comp_para:
+  method: sliced_batch
+  num_iters: 10
+  num_projs: 100
+  alpha: 0.5
+  reg: 0.01
+hidden_dim: 64
+num_layers: 2
+missing_rate: 0.1
+patience: 100
+lr: 0.005
+weight_decay: 0.
+epochs: 2000
+n_runs: 10
+dropout: 0.5
+lp_alpha: 0.9
+jk: False
+batch_size: 1024
+graph_sampling: False
+gpu_idx: 7
+seeds:
+- 757953235
+- 892232741
+- 1526661
+- 133569720
+- 1033848620
+- 314466866
+- 57396115
+- 17626403
+- 515193964
+- 189336409
+
